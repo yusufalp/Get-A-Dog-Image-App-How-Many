@@ -3,11 +3,11 @@ function displayImages(data){
     for (let i=0; i<data.message.length; i++){
         $('.image-collection').append(`<img src=${data.message[i]} alt="">`)
     }
-    $('.image-collection').removeClass('hidden');
+    $('.result-page').removeClass('hidden');
 }
 
 function clearBeforeNew(){
-    $('.image-collection').html('');
+    $('.image-collection').empty();
 }
 
 function getInfo(userValue){
